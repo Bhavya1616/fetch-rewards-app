@@ -1,0 +1,59 @@
+/* Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative; /* Ensures content stays above the background */
+}
+
+.login-container::before {
+  content: ''; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-image: url('../img/dogs.jpg');  /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);  /* Apply blur effect */
+  z-index: -1;  /* Ensure the blurred image stays behind the content */
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.8);  /* Slightly transparent white background for the login form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;  /* Ensure the login box doesn’t stretch too wide */
+}
+
+h4 {
+  color: #333;  /* Dark text for the title */
+}
+
+button {
+  background-color: #1976d2;
+  &:hover {
+    background-color: #1565c0;
+  }
+}
+
+input {
+  margin-bottom: 16px;
+}
+  
+  .login-container .MuiTypography-root {
+    font-weight: bold;
+  }
+  
+  .login-box .MuiTextField-root {
+    margin-bottom: 16px;
+  }
+  
+  .login-box .MuiButton-root {
+    margin-top: 20px;
+  }
+  
