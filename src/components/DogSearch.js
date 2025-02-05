@@ -148,7 +148,7 @@ const DogSearch = () => {
       }}
     >
       <Typography variant="h4" align="center" gutterBottom>
-        Dog Search
+        Fetch Your Perfect Pup!
       </Typography>
       {/* Logout Button */}
       <Box display="flex" justifyContent="flex-end" marginBottom="20px">
